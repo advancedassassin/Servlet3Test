@@ -7,7 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04b0abbe-6409-43ed-b721-cf5f6c87cf62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/servlet/src/com/ydx/servlet/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet/src/META-INF/services/javax.servlet.ServletContainerInitializer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet/src/com/ydx/service/AbstractHelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet/src/com/ydx/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet/src/com/ydx/service/HelloServiceExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet/src/com/ydx/service/HelloServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet/src/com/ydx/servlet/MyServletContainerInitializer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -48,6 +54,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
@@ -55,7 +62,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.11816406" />
     <property name="project.structure.side.proportion" value="0.32785714" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -363,8 +370,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603940662319</updated>
-      <workItem from="1603940663865" duration="6236000" />
+      <workItem from="1603940663865" duration="11118000" />
     </task>
+    <task id="LOCAL-00001" summary="111">
+      <created>1603957471001</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603957471001</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,5 +395,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="111" />
+    <option name="LAST_COMMIT_MESSAGE" value="111" />
   </component>
 </project>
