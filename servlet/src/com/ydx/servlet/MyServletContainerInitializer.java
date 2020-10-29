@@ -2,10 +2,9 @@ package com.ydx.servlet;
 
 import com.ydx.service.HelloService;
 
-import javax.servlet.ServletContainerInitializer;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.annotation.HandlesTypes;
+import java.util.EnumSet;
 import java.util.Set;
 
 /**
@@ -31,6 +30,15 @@ public class MyServletContainerInitializer implements ServletContainerInitialize
         for(Class claz : set){
             System.out.println("感兴趣的类"+claz);
         }
+        // 注册组件
+        ServletRegistration.Dynamic userServlet = servletContext.addServlet("userServlet", new UserServlet());
+        // 配置Servlet映射
+        userServlet.addMapping("/user");
 
+        servletContext.addListener(UserListener.class);
+
+        FilterRegistration.Dynamic userFilter = servletContext.addFilter("userFilter", UserFilter.class);
+        // 配置Filter映射
+        userFilter.addMappingForUrlPatterns(EnumSet.of(DispatcherType.REQUEST),true, "/*");
     }
 }
